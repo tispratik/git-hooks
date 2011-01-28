@@ -1,0 +1,7 @@
+#!/bin/bash
+echo ""
+echo ""
+echo -e "\033[1m RECENT COMMITS \033[0m"
+git log -n5 --pretty=format:"%Cgreen%h%d%Creset %an - %s (%Cblue%ar%Creset)"
+echo ""
+echo ""
