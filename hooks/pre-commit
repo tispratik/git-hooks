@@ -1,0 +1,5 @@
+#!/bin/sh
+
+git status -s | grep -E '^(A )|(M )' | sed 's/^A\ \ //' | sed 's/^M\ \ //' | xargs grep -hs 'TODO:'
+
+exit 0
